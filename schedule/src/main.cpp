@@ -1,10 +1,9 @@
 #include <iostream>
 #include <vector>
-#include <memory>
 #include <iomanip>
 #include <optional>
-#include <valarray>
 #include <numeric>
+#include <algorithm>
 #include <set>
 
 class problem {
