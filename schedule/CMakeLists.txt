@@ -1,3 +1,6 @@
 project (schedule)
 
-add_executable (${PROJECT_NAME} src/main.cpp)
+aux_source_directory (src SRC)
+add_executable (${PROJECT_NAME} ${SRC})
+
+target_include_directories (${PROJECT_NAME} PUBLIC inc)
