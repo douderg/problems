@@ -14,8 +14,8 @@ Evaluates a schedule for employees under the following constraints:
 schedule <employees> <senior-employees> <offices> <senior-offices> <days>
     employees           The total number of employees
     senior-employees    The number of employees that can work in the senior-only offices
-    offices             The total number of offices
-    senior-offices      The number of senior-only offices that can be reused multiple times
+    offices               The total number of offices
+    senior-offices        The number of senior-only offices that can be reused multiple times
     days                The number of days for the schedule
 ```
 
