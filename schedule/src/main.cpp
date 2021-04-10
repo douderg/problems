@@ -120,6 +120,7 @@ void problem::validate_solution() {
             if (it != office_assignments[j].end()) {
                 throw std::runtime_error("duplicate entry found");
             }
+            office_assignments[j].insert(*value);
         }
     }
 }
