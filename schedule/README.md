@@ -23,7 +23,7 @@ schedule <employees> <senior-employees> <offices> <senior-offices> <days>
 
 Calling `schedule 33 6 28 1 32` using a terminal will produce the schedule in the following format:
 
-|senior office 1|senior office 2| ... |office 1|office 2|...|
+||senior office 1| senior office 2 |...|office 1|...|
 |---|---|---|---|---|---|
 |day 1|employee id|employee id|employee id|...||
 |day 2|employee id|employee id|...|||
