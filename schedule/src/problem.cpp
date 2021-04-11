@@ -32,11 +32,7 @@ size_t problem::senior_employee_count() const {
 }
 
 void problem::calculate() {
-    std::vector<std::optional<size_t>> ids(offices);
-    size_t id=0;
-    for (auto& v:ids) {
-        v=id++;
-    }
+
     std::vector<size_t> days_off(employees);
     std::fill(days_off.begin(), days_off.end(), days);
     std::vector<std::set<size_t>> worked_before(mixed_offices);
@@ -53,7 +49,6 @@ void problem::calculate() {
         size_t assigned = 0;
         std::vector<bool> office_full(mixed_offices);
         for (size_t j = 0; j < employees && assigned < mixed_offices; ++j) {
-            bool found = false;
             if (days_off[today[j]] < days_off[today[0]]) {
                 continue;
             }
